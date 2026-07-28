@@ -1,0 +1,29 @@
+<script>
+    const carrito = {
+  cliente: "Juan",
+  productos: [
+    {
+      nombre: "Laptop",
+      precio: 800
+    },
+    {
+      nombre: "Mouse",
+      precio: 25
+    },
+    {
+      nombre: "Teclado",
+      precio: 50
+    }
+  ]
+};
+
+
+let total = 0;
+
+carrito.productos.forEach(producto => {
+  total += producto.precio;
+});
+
+console.log("Total del carrito: $" + total);
+
+</script>
