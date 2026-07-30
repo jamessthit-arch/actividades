@@ -1,0 +1,27 @@
+<script>
+TypeError
+
+try {
+    let numero = 10;
+    numero();
+} catch (error) {
+    console.log("TypeError:", error.message);
+}
+
+RangeError
+try {
+    let arreglo = new Array(-1);
+} catch (error) {
+    console.log("RangeError:", error.message);
+}
+
+SyntaxError
+try {
+    eval("if(true){ console.log('Hola')");
+} catch (error) {
+    console.log("SyntaxError:", error.message);
+}
+
+
+
+</script>
