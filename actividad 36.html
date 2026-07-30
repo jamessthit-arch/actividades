@@ -1,0 +1,31 @@
+<script>
+    function crearCuenta() {
+    let saldo = 0; // Saldo privado
+
+    return {
+        depositar(cantidad) {
+            saldo += cantidad;
+            console.log("Depositaste: $" + cantidad);
+            console.log("Saldo actual: $" + saldo);
+        },
+
+        retirar(cantidad) {
+            if (cantidad <= saldo) {
+                saldo -= cantidad;
+                console.log("Retiraste: $" + cantidad);
+                console.log("Saldo actual: $" + saldo);
+            } else {
+                console.log("No tienes saldo suficiente.");
+            }
+        }
+    };
+}
+
+const cuenta = crearCuenta();
+
+cuenta.depositar(1000);
+cuenta.depositar(500);
+cuenta.retirar(300);
+cuenta.retirar(1500);
+
+</script>

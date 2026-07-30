@@ -1,0 +1,15 @@
+<script>
+    function crearGeneradorID() {
+    let id = 0;
+
+    return function () {
+        id++;
+        return id;
+    };
+}
+const generarID = crearGeneradorID();
+console.log(generarID());
+console.log(generarID());
+console.log(generarID());
+
+</script>

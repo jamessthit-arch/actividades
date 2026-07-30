@@ -1,0 +1,9 @@
+el Temporal Dead Zone son los periodos de tiempo en JavaScript en la que una variable declarada con let o const solo existe en la memoria pero este no se puede usar. inicia del bloque de código hasta la lineal declarada se ejecuta.
+
+la función de TDZ 
+
+son las variable que usen let y const elevando el principio de su ámbito pero no inicializan con valores automáticos.
+
+si intentamos leer o escribir en variables dentro de la zona muerta, lanzara un error del ReferenceError.
+
+las variables creadas con var se inicializan como Undefined de inmediato, evitando el error de referencia causando comportamiento confusos
